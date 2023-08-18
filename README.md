@@ -1,4 +1,5 @@
-# VPL+ 
+# VPL+ :  Empowering Students and Practitioners in Programming Courses
+
 
 
 ## Project Goal
