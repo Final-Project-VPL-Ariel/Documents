@@ -30,6 +30,22 @@ The upgraded VPL system introduces the following features and functionalities:
 
 This project aims to revolutionize the assignment submission and assessment process, making it more accessible and efficient for both students and practitioners. By integrating GitHub functionality and enhancing evaluation processes, we strive to create a more streamlined experience for all users involved.
 
+## System Architecture
+
+![image](https://github.com/Final-Project-VPL-Ariel/VPL/assets/93086649/09a32cc5-3ca6-4a8e-9766-d062e89dc370)
+
+What is happening in backstage of a running task?
+
+Connections when running task:
+
+1. User clicks run button. Browser send request by === AJAX (json) === > to the VPL plugin in the Moodle server.
+2. VPL plugin in Moodle Server prepare task and send data by === http/https (XMLRPC) === > to a selected execution server.
+3. Execution Server starts the task and returns to VPL plugin in Moodle server the task identification.
+4. VPL plugin in Moodle server returns to the browser the task identification.
+5. The browser monitorize the task by connecting by === ws/wss === > to the execution Server.
+6. The browser may connect with the running program by connecting by === ws/wss === > to the execution Server.
+ 
+
 ## Explainer Video: Understanding the Upgraded VPL System
 Check out our video where we delve into the features and benefits of the upgraded VPL system, providing a clear understanding of how it enhances assignment submission, evaluation, and grading. 
 [Watch the video!](https://www.veed.io/view/07bd3702-aa95-423e-89aa-7c7f92f8251b?panel=share).
