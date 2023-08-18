@@ -1,4 +1,4 @@
-# VPL PLUS
+# VPL+ 
 
 
 ## Project Goal
