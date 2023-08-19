@@ -59,7 +59,8 @@ Check out our video where we delve into the features and benefits of the upgrade
   <embed src="https://www.youtube.com/watch?v=F_3IvnE1qeo"
          type="application/x-shockwave-flash"
          wmode="transparent" width="425" height="350" />
-</object>### Uploading a task soultion to VPL by the student.
+</object>
+### Uploading a task soultion to VPL by the student.
 https://www.youtube.com/watch?v=F_3IvnE1qeo
 
 
