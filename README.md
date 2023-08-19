@@ -53,8 +53,13 @@ Check out our video where we delve into the features and benefits of the upgrade
 
 ## Example Videos
 ### Uploading a programming task to VPL by the lecturer.
-https://www.youtube.com/watch?v=BPKGN0aTf20
-### Uploading a task soultion to VPL by the student.
+<object width="425" height="350">
+  <param name="movie" value="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg" />
+  <param name="wmode" value="transparent" />
+  <embed src="https://www.youtube.com/watch?v=F_3IvnE1qeo"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" />
+</object>### Uploading a task soultion to VPL by the student.
 https://www.youtube.com/watch?v=F_3IvnE1qeo
 
 
