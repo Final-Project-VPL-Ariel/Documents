@@ -54,10 +54,13 @@ Check out our video where we delve into the features and benefits of the upgrade
 
 ## Example Videos
 ### Uploading a programming task to VPL by the lecturer.
+Click the image to view the video.
 
 [![Alt Click the image to view the video.](https://img.youtube.com/vi/BPKGN0aTf20/1.jpg)](https://www.youtube.com/watch?v=BPKGN0aTf20)
 
 ### Uploading a task soultion to VPL by the student.
+Click the image to view the video.
+
 [![Alt text](https://img.youtube.com/vi/F_3IvnE1qeo/1.jpg)](https://www.youtube.com/watch?v=F_3IvnE1qeo)
 
 
