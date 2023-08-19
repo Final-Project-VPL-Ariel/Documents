@@ -50,7 +50,7 @@ Connections when running task:
 ## Explainer Video: Understanding the Upgraded VPL System
 Check out our video where we delve into the features and benefits of the upgraded VPL system, providing a clear understanding of how it enhances assignment submission, evaluation, and grading. 
 
-[![Alt Click the image to view the video.]()](https://youtu.be/dsni0-FDYb8)
+[![Alt Click the image to view the video.](http://i3.ytimg.com/vi/dsni0-FDYb8/hqdefault.jpg)](https://youtu.be/dsni0-FDYb8)
 
 ## Example Videos
 ### Uploading a programming task to VPL by the lecturer.
