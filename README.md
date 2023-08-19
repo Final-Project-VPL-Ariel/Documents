@@ -51,5 +51,11 @@ Connections when running task:
 Check out our video where we delve into the features and benefits of the upgraded VPL system, providing a clear understanding of how it enhances assignment submission, evaluation, and grading. 
 [Watch the video!](https://www.veed.io/view/07bd3702-aa95-423e-89aa-7c7f92f8251b?panel=share).
 
+## Example Videos
+### Uploading a programming task to vpl by the lecturer.
+https://www.youtube.com/watch?v=BPKGN0aTf20
+### Uploading a programming task to vpl by the lecturer.
+https://www.youtube.com/watch?v=F_3IvnE1qeo
+
 
 *(Please note: The above information is a high-level overview of the project and its objectives. Further documentation and instructions can be found within the project repository.)*
