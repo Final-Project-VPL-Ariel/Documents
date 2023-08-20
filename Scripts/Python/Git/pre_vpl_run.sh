@@ -12,11 +12,7 @@ git clone --quiet "$repo_url" "$student_files"
 # Move to the student's repository directory
 cd "$student_files"
 git checkout "$commit"
+mv ./* ..
 cd ..
-
-
-    echo "The student's repository has the desired commit number: $commit_number"
-    mv ./* ..
-    cd ..
-    rm -rf "$student_files"
+rm -rf "$student_files"
 
