@@ -63,5 +63,8 @@ Click the image to view the video.
 
 [![Alt text](https://img.youtube.com/vi/F_3IvnE1qeo/1.jpg)](https://www.youtube.com/watch?v=F_3IvnE1qeo)
 
+VPL Installation Guide.
+[![Alt text](https://vpl.dis.ulpgc.es/documentation/vpl-3.4.3+/installation.html)]
+
 
 *(Please note: The above information is a high-level overview of the project and its objectives. Further documentation and instructions can be found within the project repository.)*
