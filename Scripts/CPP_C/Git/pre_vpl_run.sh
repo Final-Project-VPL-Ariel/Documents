@@ -21,14 +21,8 @@ cd ..
 cd "$student_files"
 git checkout "$commit"
 cd ..
-
-    # Proceed with the rest of the script
-    find "$student_files" -type f -exec cp -n {} "$teacher_files" \;
-    find "$student_files" -exec cp -nR {} "$teacher_files" \;
-    rm -f -r "$student_files"
-    mv "$teacher_files"/* ./
-
-else
-    echo "The student's repository does not have the desired commit: $commit_hash"
-    # Additional actions or validations for this case
-fi
+# Proceed with the rest of the script
+find "$student_files" -type f -exec cp -n {} "$teacher_files" \;
+find "$student_files" -exec cp -nR {} "$teacher_files" \;
+rm -f -r "$student_files"
+mv "$teacher_files"/* ./
