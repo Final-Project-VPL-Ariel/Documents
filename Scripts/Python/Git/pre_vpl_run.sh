@@ -9,17 +9,14 @@ repo_url="${input_lines[0]}"
 commit="${input_lines[1]}"
 # Clone the student's repository
 git clone --quiet "$repo_url" "$student_files"
-
+sleep 5 
 # Move to the student's repository directory
-cd "$student_files"
 git checkout "$commit"
-mv ./* ..
-cd ..
-#ls -l 
+mv $student_files/* ./
 
 git clone --quiet "$teacher_link" "$teacher_files"
-cd "$teacher_files"
+sleep 5 
 git checkout "$commit_teacher"
-mv ./* ..
-cd ..
+mv $teacher_files/* ./
+
 
