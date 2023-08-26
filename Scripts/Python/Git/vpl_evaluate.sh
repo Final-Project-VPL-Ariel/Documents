@@ -2,6 +2,7 @@
 bash pre_vpl_run.sh
 echo "----"
 ls -l 
+######## ----------------- Make sure all the tests are with prefix "test_" -------------------------
 python3  test_*.py >> ans.txt 2>&1
 echo "#!/bin/bash" >> vpl_execution
 
