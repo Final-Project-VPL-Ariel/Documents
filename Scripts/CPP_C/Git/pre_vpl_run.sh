@@ -7,7 +7,7 @@ teacher_link="https://github.com/Final-Project-VPL-Ariel/Orgchart-teacher.git" #
 
 mapfile -t input_lines < "$requested_file"
 repo_url="${input_lines[0]}"
-commit_hash="${input_lines[1]}"
+commit="${input_lines[1]}"
 
 # Clone the student's repository
 git clone --quiet "$repo_url" "$student_files"
@@ -18,26 +18,11 @@ cd "$teacher_files"
 git checkout "$commit_teacher"
 cd ..
 
-# Check if the provided commit hash matches the first 7 characters of the actual commit hash in the student's repository
 cd "$student_files"
-actual_commit_hash=$(git rev-parse --short=7 HEAD)
+git checkout "$commit"
 cd ..
-
-echo
-echo "Desired commit hash: $commit_hash"
-echo "Actual commit hash in student's repository: $actual_commit_hash"
-echo
-
-if [[ "$commit_hash" == "$actual_commit_hash" ]]; then
-    echo "The student's repository has the desired commit: $commit_hash"
-
-    # Proceed with the rest of the script
-    find "$student_files" -type f -exec cp -n {} "$teacher_files" \;
-    find "$student_files" -exec cp -nR {} "$teacher_files" \;
-    rm -f -r "$student_files"
-    mv "$teacher_files"/* ./
-
-else
-    echo "The student's repository does not have the desired commit: $commit_hash"
-    # Additional actions or validations for this case
-fi
+# Proceed with the rest of the script
+find "$student_files" -type f -exec cp -n {} "$teacher_files" \;
+find "$student_files" -exec cp -nR {} "$teacher_files" \;
+rm -f -r "$student_files"
+mv "$teacher_files"/* ./
