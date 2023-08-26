@@ -1,7 +1,9 @@
 #!/bin/bash
 bash pre_vpl_run.sh
-
-python3 -m unittest discover -v -b -p *_test.py >> ans.txt 2>&1
+echo "----"
+ls -l 
+######## ----------------- Make sure all the tests are with prefix "test_" -------------------------
+python3  test_*.py >> ans.txt 2>&1
 echo "#!/bin/bash" >> vpl_execution
 
 echo "echo '<|--'" >> vpl_execution
@@ -35,7 +37,7 @@ echo $grade
 
 #-------------------------------------
 grade=$(./round_grade.sh $grade)
-python3 -m unittest discover -v -p *_test.py >> ans.txt 2>&1
+python3 test_*.py >> ans.txt 2>&1
 if [ $? -eq 0 ]; then
     echo "All tests passed!"
     echo "echo 'Grade :=>> 100'" >> vpl_execution
