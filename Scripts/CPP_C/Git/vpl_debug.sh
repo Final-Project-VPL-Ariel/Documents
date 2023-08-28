@@ -1,8 +1,23 @@
 #!/bin/bash
-
+makecommand=test_debug
+compilecommand="compile command"
 bash pre_vpl_run.sh
 
-make test_debug
+make $makecommand
+if [ $? -ne 0 ] ; then
+	echo "Compilation failed"
+	exit 1
+
+## run compile command
+else
+	$compilecommand
+	if [ $? -ne 0 ] ; then
+		echo "Compilation failed"
+		exit 1
+	fi
+fi
+fi
+
 
 if [ -f test_debug ] ; then
 	mv test_debug vpl_program
