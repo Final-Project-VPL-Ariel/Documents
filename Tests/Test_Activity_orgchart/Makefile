@@ -21,7 +21,7 @@ test: TestRunner.o StudentTest1.o StudentTest2.o $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $(DEBUG_FLAGS) $^ -o $@
 
 test_debug: MainStudentTest.o $(OBJECTS)
-	$(CXX) $(CXXFLAGS) $(DEBUG_FLAGS) $^ -o $@ -L/doctest -ldoctest
+	$(CXX) $(CXXFLAGS) $(DEBUG_FLAGS) $^ -o $@ 
 
 %.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) $(DEBUG_FLAGS) --compile $< -o $@
