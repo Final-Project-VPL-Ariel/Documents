@@ -1,6 +1,6 @@
 #!/bin/bash
 makecommand=test_debug
-compilecommand="gcc file.c -o main"
+compilecommand="gcc example.c -o main"
 bash pre_vpl_run.sh
 
 make $makecommand
